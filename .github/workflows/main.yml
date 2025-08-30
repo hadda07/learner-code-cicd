@@ -1,13 +1,13 @@
 name: Greeting
-# on: push
-on:
-    push:
-        branches:
-            - main
-            - 'feature/**'
+on: push
+# on:
+#     push:
+#         branches:
+#             - main
+#             - 'feature/**'
 jobs:
     greet:
         runs-on: ubuntu-latest
         steps:
             - name: "greet user"
-              run: echo "Hello world!"
+              run: echo "Hello world finally did our first code!"
