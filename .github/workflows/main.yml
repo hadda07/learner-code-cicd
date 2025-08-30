@@ -1,11 +1,9 @@
-name: greet
-on: 
-   push:
-      branches:
-        - main
+name: Greeting
+# on: push
+on: main
 jobs:
-   greetyy:
-       runs on: ubuntu-latest
-       steps:
-          - name: "greet user"
-            run: echo "Hello World..!!"
+    greet:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "greet user"
+              run: echo "Hello world!
