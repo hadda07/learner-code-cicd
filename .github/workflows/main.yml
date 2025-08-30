@@ -7,5 +7,5 @@ jobs:
    greetyy:
       runs on: ubuntu-latest
       steps:
-         - name: "greet user"
-           run: echo "Hello World..!!"
+          - name: "greet user"
+            run: echo "Hello World..!!"
