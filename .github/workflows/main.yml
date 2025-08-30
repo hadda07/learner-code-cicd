@@ -5,7 +5,7 @@ on:
         - main
 jobs:
    greetyy:
-      run on: ubuntu-latest
+      runs on: ubuntu-latest
       steps:
          - name: "greet user"
            run: echo "Hello World..!!"
