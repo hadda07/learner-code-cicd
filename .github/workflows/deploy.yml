@@ -13,3 +13,6 @@ jobs:
               uses: actions/checkout@v4
               with:
                   node-version: 20
+            - name: print node version
+              run: node -v 
+              
