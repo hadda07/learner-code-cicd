@@ -1,7 +1,7 @@
 name: Greeting
 on: push
 # on:
-#     push:
+###     push:
 #         branches:
 #             - main
 #             - 'feature/**'
@@ -14,5 +14,9 @@ jobs:
               with:
                   node-version: 20
             - name: print node version
-              run: node -v 
-              
+              run: node -v
+            - name: Cache Dependencies
+              uses: actions/cache@v4
+              with: 
+              path: ~/.npm
+              key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}             
